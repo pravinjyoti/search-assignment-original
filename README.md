@@ -2,6 +2,7 @@
 
 ## Usage
 - Clone this repository
+- Change the configuration 
 - Run the commands:
 
 ```js
