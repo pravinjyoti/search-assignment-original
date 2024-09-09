@@ -10,6 +10,23 @@
    $ npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Open [http://localhost:3000/]
+
+## Configuration
+```js
+  const config = {
+  searchURL: "<search_api_url>",
+  suggesterURL: "<suggester_api_url>",
+  trackApiKey: "<analytics_write_key>", 
+  searchAuth: "<base64_encoded_api_key>:"   
+}
+```
+
+## SearchStax Widgets
+- The main JavaScript file `src/App.txs` imports and initializes several widgets from the `@searchstax-inc/searchstudio-ux-js` library. These widgets add search functionality to the web application.
+- `SearchstaxInputWidget` - Renders the search input
+- `SearchstaxResultWidget` - Renders search results
+- `SearchstaxFacetsWidget` - Renders faceted filters
+- `SearchstaxPaginationWidget` - Renders pagination control
+  
+
